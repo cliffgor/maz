@@ -6,8 +6,8 @@ const server = http.createServer((req, res) => {
     // res.setHeader('Content-type', 'text/html')
     // res.statusCode = 404
 
-    res.writeHead(500, {'Content-type': 'application/json'})
-    res.end(JSON.stringify({message: 'Server Error'}))
+    res.writeHead(200, { 'Content-type': 'text/html' })
+    res.end('<h1>Hello world!</h1>')
 })
 
 server.listen(PORT, () => {
